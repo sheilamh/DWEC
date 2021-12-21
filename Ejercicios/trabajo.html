@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>TAREA DWEC03</h1>
+    
+</body>
+<script type="text/javascript">
+
+let nuevaventana =  window.open("resizable=0, width=700, height=500");
+nuevaventana.document.open();
+let funcion = function() {
+nuevaventana.document.write("<h3>Ejemplo de Ventana Nueva</h3><br>");
+nuevaventana.document.write("URL Completa: "+nuevaventana.document.URL+"<br>");
+nuevaventana.document.write("Protocolo utilizado: "+nuevaventana.location.protocol+"<br>");
+nuevaventana.document.write("Nombre en código del navegador: "+nuevaventana.navigator.appCodeName +"<br>");
+if (nuevaventana.navigator.javaEnabled) {
+    nuevaventana.document.write("Java SI disponible en esta ventana <br>");
+} else {
+    nuevaventana.document.write("Java NO disponible en esta ventana <br>");
+}
+nuevaventana.document.write('<iframe src="https://www.google.es" width="800" height="600"></iframe>');
+}
+funcion();
+</script>
+
+<script type="text/javascript">
+let nombre = prompt("Nombre: ");
+let apellidos = prompt("Apellidos: ");
+let dia = prompt("Día de nacimiento: ");
+let mes = prompt("Mes de nacimiento: ");
+let ayo = prompt("Año de nacimiento: ");
+
+document.write("Buenos dias "+nombre+" "+apellidos+"<br>");
+document.write("Tu nombre tiene "+nombre.length +" caracteres, incluidos espacios<br>");
+let posicionprimera=nombre.indexOf("a");
+let posicionultima=nombre.lastIndexOf("a");
+document.write("La primera A de tu nombre está en la posición: "+(posicionprimera+1)+"<br>");
+document.write("La ultima A de tu nombre está en la posición: "+(posicionultima+1)+"<br>");
+document.write("Tu nombre menos las tres primeras letras es: "+nombre.substr(3)+"<br>");
+document.write("Tu nombre todo en mayúscula es: "+nombre.toUpperCase()+"<br>");
+
+
+    fechactual = new Date();
+    ahora_ayo = fechactual.getYear();
+    ahora_mes = fechactual.getMonth();
+    ahora_dia = fechactual.getDate();
+    edad = (ahora_ayo + 1900) - ayo;
+    if ( ahora_mes < (mes - 1))
+    {
+      edad--;
+    }
+    if (((mes - 1) == ahora_mes) && (ahora_dia < dia))
+    { 
+      edad--;
+    }
+    if (edad > 1900)
+    {
+    edad -= 1900;
+    }
+
+document.write("Tu edad es: "+edad+"<br>");
+document.write("Naciste un feliz "+mes+" del año "+ayo+"<br>");
+document.write("El coseno de 180 es: "+Math.cos(180)+"<br>");
+
+let array  = [34,67,23,75,35,19];
+    mayor = 0;
+
+for(let i=0,len=array .length;i<len;i++){
+    if(mayor < array [i]){
+        mayor = array [i];
+    }
+}
+document.write("El número mayor de (34,67,23,75,35,19) es: "+mayor+"<br>");
+let numeroazar= parseInt(Math.random()*10)
+document.write("Ejemplo de número al azar: "+numeroazar+"<br>");
+</script>
+
+</html>
+

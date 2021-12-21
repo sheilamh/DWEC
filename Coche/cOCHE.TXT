@@ -1,0 +1,12 @@
+crear clase
+constructor
+agregar modelo comprobando que no existe MODEL
+elimina MODEL
+visualizar
+
+crear 
+comprobar la marca
+crear marca nueva
+borraR
+MOSTRAR marca
+SACAR UNA EN CONCRETO

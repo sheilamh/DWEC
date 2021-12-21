@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario:</h1><br>
+
+    <form>
+        <label for="nombre">Nombre</label><input id="nombre" type="text" name="nombre"><br>
+        <label for="apellido">Apellido</label><input id="apellido" type="text" name="apellido"><br>
+        <label for="telefono">Telefono</label><input id="telefono" type="text" name="telefono"><br>
+        <label for="usuario">Email</label><input id="email" type="email" name="usuario"><br>
+        <label for="contrasena">Constraseña</label><input id="contrasena" type="password" name="contrasena"><br>
+    
+        <select name="nacionalidad">
+            <option value="España">Español</option>
+            <option value="Otro" selected="selected">Extrangero</option>
+        </select> <br>
+        <label for="sexo">Sexo:</label>
+        <input type="radio" name='sexo' value='m'>Mujer</input>
+        <input type="radio" name='sexo' value='h'>Hombre</input><br>
+        <input id="boton" type="submit" name="submit" value="Crear Nuevo Usuario">
+    
+        </form>
+
+    <script>
+        window.onload = function(){
+            const cnombre = document.getElementById("nombre");
+            const capellido = document.getElementById("apellido");
+            const ctelefono = document.getElementById("telefono");
+            const cemail = document.getElementById("email");
+            const ccontrasena = document.getElementById("contrasena");
+
+            let nombre = document.getElementById("nombre").value;
+            let apellido = document.getElementById("apellido").value;
+            let telefono = document.getElementById("telefono").value;
+            let email = document.getElementById("email").value;
+            let contrasena = document.getElementById("contrasena").value;
+            let boton = document.getElementById("boton");
+
+            boton.addEventListener("click", function(){
+                cnombre = nombre;
+                document.write (cnombre);
+            }, false);
+        }
+    </script>
+</body>
+</html>

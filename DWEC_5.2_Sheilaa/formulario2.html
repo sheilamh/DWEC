@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="formulario2.css">
+</head>
+
+<body>
+    <div>
+
+        <form>
+            <h1>Formulario</h1>
+            <div>
+            <label for="nombre">Nombre: </label>
+            <input id="nombre" type="text" name="nombre">
+            <span id="span_nombre">Faltan campos en el nombre</span><br>
+        </div>
+            <label for="apellido">Apellido: </label><input id="apellido" type="text" name="apellido"><span id="span_apellido">Faltan campos en el apellido</span><br>
+            <label for="telefono">Telefono: </label><input id="telefono" type="text" name="telefono"><span id="span_telefono">Debes introducir un numero correcto</span><br>
+            <label for="email">Email: </label><input id="Email" type="email" name="usuario"><br>
+            <label for="contrasena">Constraseña: </label><input id="password" type="password" name="contrasena"><br>
+            <label for="nacimiento">Fecha Nacimiento: </label><input id="nacimiento" type="date" name="nacimiento"><br>
+            <select name="nacionalidad">
+                <option value="España">Español</option>
+                <option value="Otro" selected="selected">Extrangero</option>
+            </select> <br>
+            <label for="sexo">Sexo:</label>
+            <input type="radio" name='sexo' value='m'>Mujer</input>
+            <input type="radio" name='sexo' value='h'>Hombre</input><br>
+            <input id="boton" type="submit" name="submit" value="Crear Nuevo Usuario">
+        </form>
+
+    </div>
+    <script src="formulario2.js"></script>
+</body>
+
+</html>

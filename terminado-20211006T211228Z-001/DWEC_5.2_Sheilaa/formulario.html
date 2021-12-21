@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="formulario.css">
+</head>
+
+<body>
+    <div>
+
+        <form id="formulario">
+            <h1>Formulario</h1>
+            <!-- Nombre -->
+            <label for="nombre">Nombre: </label>
+            <input id="nombre" type="text" name="nombre">
+            <i id="imagen" class="formulario__validacion-estado fas fa-user-times"></i>
+            <span id="span_nombre">Faltan campos en el nombre</span><br>
+            
+            <!-- Apellido -->
+            <label for="apellido">Apellido: </label>
+            <input id="apellido" type="text" name="apellido">
+            <i class="formulario__validacion-estado fas fa-user-times"></i>
+            <span id="span_apellido">Faltan campos en el apellido</span><br>
+
+            <!--Telefono -->
+            <label for="telefono">Telefono: </label>
+            <input id="telefono" type="text" name="telefono">
+            <i class="formulario__validacion-estado fas fa-user-times"></i>
+            <span id="span_telefono">Debes introducir un numero correcto</span><br>
+
+            <!-- Email -->
+            <label for="email">Email: </label>
+            <input id="Email" type="email" name="usuario">
+            <i class="fad fa-badge-check"></i><br>
+
+            <!-- Contraseña -->
+            <label for="contrasena">Constraseña: </label>
+            <input id="password" type="password" name="contrasena">
+            <i class="formulario__validacion-estado fas fa-user-times"></i>
+
+           <!-- Fecha nacimiento -->
+            <label for="nacimiento">Fecha Nacimiento: </label>
+            <input id="nacimiento" type="date" name="nacimiento"><br>
+
+            <!-- Nacionalidad -->
+            <select name="nacionalidad">
+                <option value="España">Español</option>
+                <option value="Otro" selected="selected">Extrangero</option>
+            </select> <br>
+
+            <!-- Sexo -->
+            <label class="sexo" for="sexo">Sexo:</label><br>
+            <input class="input" type="radio" name='sexo' value='m'>Mujer</input><br>
+            <input class="input" type="radio" name='sexo' value='h'>Hombre</input><br>
+
+            <!-- Text Area -->
+            <textarea class=textarea></textarea>
+
+            <!-- Boton de enviar información -->
+            <input id="boton" type="submit" name="submit" value="CREAR NUEVO USUARIO">
+            
+        </form>
+
+    </div>
+ <script src="formulario.js"></script>
+ <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
